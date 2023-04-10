@@ -7,6 +7,11 @@ const Home = () => {
   const categoryData = useLoaderData();
 
   const [featureJob, setFeatureJob] = useState([]);
+  const [seeAll, setSeeAll] = useState(false);
+
+  const handleSeeAll = () => {
+    setSeeAll(!seeAll);
+  };
 
   useEffect(() => {
     async function fetchData() {
@@ -20,7 +25,7 @@ const Home = () => {
     }
     fetchData();
   }, []);
-  console.log(featureJob);
+  console.log(seeAll);
 
   return (
     <div className="my-container">
@@ -72,11 +77,18 @@ const Home = () => {
           Discover exciting career opportunities and make your mark in the
           industry with us!
         </p>
-        <div className="grid gap-8 py-8 md:grid-cols-2">
+        <div className="grid gap-12 py-8 md:grid-cols-2">
           {featureJob &&
-            featureJob.map((singleJob) => (
-              <FeatureJob key={singleJob.job_id} singleJob={singleJob} />
-            ))}
+            featureJob
+              .slice(0, `${seeAll && seeAll ? 12 : 4}`)
+              .map((singleJob) => (
+                <FeatureJob key={singleJob.job_id} singleJob={singleJob} />
+              ))}
+        </div>
+        <div className="text-center">
+          <button onClick={handleSeeAll} className="btn-primary py-3">
+            {seeAll && seeAll ? "See less Job" : "See All Jobs"}
+          </button>
         </div>
       </div>
     </div>

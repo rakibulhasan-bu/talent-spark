@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeatureJob = ({ singleJob }) => {
   const {
@@ -14,7 +15,7 @@ const FeatureJob = ({ singleJob }) => {
   return (
     <div className="space-y-3 rounded-lg border border-gray-400 p-8 hover:bg-gray-50">
       <img
-        className="aspect-video h-24 object-contain"
+        className="aspect-video h-20 object-contain"
         src={company_logo}
         alt=""
       />
@@ -34,7 +35,11 @@ const FeatureJob = ({ singleJob }) => {
           <span>{salary_range}</span>
         </p>
       </div>
-      <button className="btn-primary py-2">View Details</button>
+      <div className="py-2">
+        <Link to="/featureJob-details/id" className="btn-primary py-2">
+          View Details
+        </Link>
+      </div>
     </div>
   );
 };
