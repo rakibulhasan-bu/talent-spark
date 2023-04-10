@@ -4,7 +4,16 @@
 
 .my-container {
   /* @apply mx-auto ; */
-  @apply mx-auto  sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl;
+  @apply mx-auto  sm:max-w-xl md:max-w-full md:px-16 lg:max-w-screen-xl;
+}
+/* .section{
+  @apply py;
+} */
+.title {
+  @apply pb-4 text-center text-5xl font-semibold text-gray-900;
+}
+.sub-title {
+  @apply text-center font-medium text-gray-800;
 }
 .active {
   @apply font-medium tracking-wide text-violet-500 transition-colors duration-200;
