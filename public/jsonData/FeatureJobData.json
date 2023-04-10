@@ -7,7 +7,7 @@
     "employment_type": "Full-time",
     "location": "Seattle, USA",
     "salary_range": "$12000-$15000",
-    "company_logo": "https://th.bing.com/th/id/R.217d03013c51c76db7cf0e9b50154d4b?rik=qhp5rokakqakbA&pid=ImgRaw&r=0"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681143161/Rakibul_Hasan/images_xgt9jf.png"
   },
 
   {
@@ -18,7 +18,7 @@
     "employment_type": "Part-time",
     "location": "Mountain View, USA",
     "salary_range": "$700-$1000",
-    "company_logo": "https://th.bing.com/th?id=OIP.OKq-BhPE8XlFzuQDJ6w2fgHaCe&w=350&h=116&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681142829/Rakibul_Hasan/google-1-1_1_anliam.png"
   },
   {
     "job_id": "JB6655",
@@ -28,7 +28,7 @@
     "employment_type": "Full-time",
     "location": "Dublin, Ireland",
     "salary_range": "$100,000-$130,000",
-    "company_logo": "https://th.bing.com/th/id/OIP.FBLPl8MA7M3_NJfOHKHZQAHaBj?w=329&h=73&c=7&r=0&o=5&pid=1.7"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681143237/Rakibul_Hasan/download_eke0kj.png"
   },
   {
     "job_id": "JB5544",
@@ -38,27 +38,27 @@
     "employment_type": "Part-time",
     "location": "California, United States",
     "salary_range": "$500-$800",
-    "company_logo": "https://th.bing.com/th?id=OIP.Pe9RqLXRaGoyeAeUTUnt2AHaI2&w=228&h=273&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681143532/Rakibul_Hasan/images_vu3pga.jpg"
   },
   {
     "job_id": "JB4433",
-    "company_name": "Baidu",
+    "company_name": "Tesla",
     "job_title": "Artificial Intelligence Engineer",
     "employee_type": "Remote",
     "employment_type": "Full-time",
-    "location": "Beijing, China",
+    "location": "California, United States.",
     "salary_range": "$150,000-$180,000",
-    "company_logo": "https://th.bing.com/th?id=OIP.0O6s5KHg0r4aKJObmd-X7gHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681142829/Rakibul_Hasan/tesla-9_1_lgzkrc.png"
   },
   {
     "job_id": "JB3322",
-    "company_name": "Infosys",
+    "company_name": "Airbnb",
     "job_title": "DevOps Engineer",
     "employee_type": "Office",
     "employment_type": "Part-time",
-    "location": "Bangalore, India",
+    "location": "San Francisco, California",
     "salary_range": "$4000-$6000",
-    "company_logo": "https://th.bing.com/th?id=OIP.TasrvuXGO65iezQkIKuxWAHaEo&w=316&h=197&c=8&rs=1&qlt=30&o=6&pid=3.1&rm=2"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681142829/Rakibul_Hasan/Group_10021_ajgll1.png"
   },
   {
     "job_id": "JB2211",
@@ -81,7 +81,7 @@
     "company_logo": "data:image/jpeg;base64,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"
   },
   {
-    "job_id": "JB0099",
+    "job_id": "JB0069",
     "company_name": "TomTom",
     "job_title": "Full Stack Developer",
     "employee_type": "Remote",
@@ -98,6 +98,6 @@
     "employment_type": "Part-time",
     "location": "Los Gatos, California, USA",
     "salary_range": "$90,000-$120,000",
-    "company_logo": "https://th.bing.com/th/id/OIP.zP43uT7-iCNFB8Mw9keEvQHaCU?w=345&h=109&c=7&r=0&o=5&pid=1.7"
+    "company_logo": "https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681142829/Rakibul_Hasan/netflix-4_1_j2wft9.png"
   }
 ]

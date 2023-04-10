@@ -11,7 +11,7 @@ const Header = () => {
         <NavLink to={"/applied-jobs"}>Applied Jobs</NavLink>
         <NavLink to={"/blog"}>Blog</NavLink>
       </div>
-      <Link to={"/"} className="btn-primary">
+      <Link to={"/"} className="btn-primary py-3">
         Start Applying
       </Link>
     </div>

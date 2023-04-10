@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import CategoryComponent from "./CategoryComponent";
+import FeatureJob from "./FeatureJob";
 
 const Home = () => {
   const categoryData = useLoaderData();
-  console.log(categoryData);
+
+  const [featureJob, setFeatureJob] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch("/public/jsonData/FeatureJobData.json");
+        const jsonData = await response.json();
+        setFeatureJob(jsonData);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchData();
+  }, []);
+  console.log(featureJob);
 
   return (
     <div className="my-container">
@@ -21,7 +37,7 @@ const Home = () => {
             from start to finish.
           </p>
           <div className="pt-2">
-            <Link to={"/"} className="btn-primary">
+            <Link to={"/"} className="btn-primary py-3">
               Get Started
             </Link>
           </div>
@@ -56,7 +72,12 @@ const Home = () => {
           Discover exciting career opportunities and make your mark in the
           industry with us!
         </p>
-        <div className="grid gap-8 py-8 md:grid-cols-2"></div>
+        <div className="grid gap-8 py-8 md:grid-cols-2">
+          {featureJob &&
+            featureJob.map((singleJob) => (
+              <FeatureJob key={singleJob.job_id} singleJob={singleJob} />
+            ))}
+        </div>
       </div>
     </div>
   );
