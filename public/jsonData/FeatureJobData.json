@@ -1,0 +1,103 @@
+[
+  {
+    "job_id": "JB8899",
+    "company_name": "Amazon",
+    "job_title": "Machine Learning Engineer",
+    "employee_type": "Office",
+    "employment_type": "Full-time",
+    "location": "Seattle, USA",
+    "salary_range": "$12000-$15000",
+    "company_logo": "https://th.bing.com/th/id/R.217d03013c51c76db7cf0e9b50154d4b?rik=qhp5rokakqakbA&pid=ImgRaw&r=0"
+  },
+
+  {
+    "job_id": "JB7766",
+    "company_name": "Google LLC",
+    "job_title": "Software Development Engineer",
+    "employee_type": "Office",
+    "employment_type": "Part-time",
+    "location": "Mountain View, USA",
+    "salary_range": "$700-$1000",
+    "company_logo": "https://th.bing.com/th?id=OIP.OKq-BhPE8XlFzuQDJ6w2fgHaCe&w=350&h=116&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+  },
+  {
+    "job_id": "JB6655",
+    "company_name": "Facebook",
+    "job_title": "Data Scientist",
+    "employee_type": "Remote",
+    "employment_type": "Full-time",
+    "location": "Dublin, Ireland",
+    "salary_range": "$100,000-$130,000",
+    "company_logo": "https://th.bing.com/th/id/OIP.FBLPl8MA7M3_NJfOHKHZQAHaBj?w=329&h=73&c=7&r=0&o=5&pid=1.7"
+  },
+  {
+    "job_id": "JB5544",
+    "company_name": "Apple",
+    "job_title": "Cybersecurity Engineer",
+    "employee_type": "Office",
+    "employment_type": "Part-time",
+    "location": "California, United States",
+    "salary_range": "$500-$800",
+    "company_logo": "https://th.bing.com/th?id=OIP.Pe9RqLXRaGoyeAeUTUnt2AHaI2&w=228&h=273&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+  },
+  {
+    "job_id": "JB4433",
+    "company_name": "Baidu",
+    "job_title": "Artificial Intelligence Engineer",
+    "employee_type": "Remote",
+    "employment_type": "Full-time",
+    "location": "Beijing, China",
+    "salary_range": "$150,000-$180,000",
+    "company_logo": "https://th.bing.com/th?id=OIP.0O6s5KHg0r4aKJObmd-X7gHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+  },
+  {
+    "job_id": "JB3322",
+    "company_name": "Infosys",
+    "job_title": "DevOps Engineer",
+    "employee_type": "Office",
+    "employment_type": "Part-time",
+    "location": "Bangalore, India",
+    "salary_range": "$4000-$6000",
+    "company_logo": "https://th.bing.com/th?id=OIP.TasrvuXGO65iezQkIKuxWAHaEo&w=316&h=197&c=8&rs=1&qlt=30&o=6&pid=3.1&rm=2"
+  },
+  {
+    "job_id": "JB2211",
+    "company_name": "Nokia",
+    "job_title": "Front-End Developer",
+    "employee_type": "Remote",
+    "employment_type": "Full-time",
+    "location": "Helsinki, Finland",
+    "salary_range": "$80,000-$100,000",
+    "company_logo": "data:image/jpeg;base64,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"
+  },
+  {
+    "job_id": "JB1100",
+    "company_name": "Microsoft",
+    "job_title": "Cloud Architect",
+    "employee_type": "Office",
+    "employment_type": "Part-time",
+    "location": "Redmond, USA",
+    "salary_range": "$10000-$15000",
+    "company_logo": "data:image/jpeg;base64,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"
+  },
+  {
+    "job_id": "JB0099",
+    "company_name": "TomTom",
+    "job_title": "Full Stack Developer",
+    "employee_type": "Remote",
+    "employment_type": "Full-time",
+    "location": "Amsterdam, Netherlands",
+    "salary_range": "$90,000-$120,000",
+    "company_logo": "data:image/jpeg;base64,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"
+  },
+  {
+    "job_id": "JB0099",
+    "company_name": "Netflix",
+    "job_title": "UX Designer",
+    "employee_type": "Remote",
+    "employment_type": "Part-time",
+    "location": "Los Gatos, California, USA",
+    "salary_range": "$90,000-$120,000",
+    "company_logo": "https://th.bing.com/th/id/OIP.zP43uT7-iCNFB8Mw9keEvQHaCU?w=345&h=109&c=7&r=0&o=5&pid=1.7"
+  }
+]
