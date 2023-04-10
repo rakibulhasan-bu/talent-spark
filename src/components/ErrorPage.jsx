@@ -32,7 +32,7 @@ const ErrorPage = () => {
           ></polygon>
         </svg>
         <div className="max-w-md text-center">
-          <h2 className="animation-text">
+          <h2 className="animation-text text-9xl">
             <span className="sr-only">Error</span> {status || 404}
           </h2>
           <p className="mb-8 text-2xl font-semibold md:text-3xl">

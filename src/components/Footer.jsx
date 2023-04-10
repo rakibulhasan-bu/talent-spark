@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-black">
+    <div className=" bg-black py-16">
       <div className="my-container">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -143,7 +143,7 @@ const Footer = () => {
 
         {/* copyright section starts here  */}
         <div className="mt-8 flex items-center justify-between border-t-2 border-zinc-600 pt-8 text-sm text-zinc-500">
-          <p>@2023 CareerHub. All Rights Reserved</p>
+          <p>@2023 TalentSpark. All Rights Reserved</p>
           <p>Powered by Talent Spark</p>
         </div>
       </div>
