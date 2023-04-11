@@ -38,7 +38,7 @@ const ErrorPage = () => {
           <p className="mb-8 text-2xl font-semibold md:text-3xl">
             {error?.message}
           </p>
-          <Link to="/" className="btn-primary">
+          <Link to="/" className="btn-primary py-3">
             Back to homepage
           </Link>
         </div>

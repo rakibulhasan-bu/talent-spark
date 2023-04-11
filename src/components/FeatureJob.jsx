@@ -36,7 +36,7 @@ const FeatureJob = ({ singleJob }) => {
         </p>
       </div>
       <div className="py-2">
-        <Link to="/featureJob-details/id" className="btn-primary py-2">
+        <Link to={`/featureJob-details/${job_id}`} className="btn-primary py-2">
           View Details
         </Link>
       </div>

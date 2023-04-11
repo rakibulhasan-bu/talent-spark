@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import CategoryComponent from "./CategoryComponent";
 import FeatureJob from "./FeatureJob";
+import { toast } from "react-hot-toast";
 
 const Home = () => {
   const categoryData = useLoaderData();
@@ -20,12 +21,11 @@ const Home = () => {
         const jsonData = await response.json();
         setFeatureJob(jsonData);
       } catch (error) {
-        console.error(error);
+        toast.error(error);
       }
     }
     fetchData();
   }, []);
-  console.log(seeAll);
 
   return (
     <div className="my-container">
