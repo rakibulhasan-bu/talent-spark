@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "../../public/utilities/fakedb";
 
 const FeatureJobDetails = () => {
   const id = useParams();
@@ -13,6 +14,7 @@ const FeatureJobDetails = () => {
     });
 
   const {
+    job_id,
     job_title,
     location,
     salary_range,
@@ -23,6 +25,10 @@ const FeatureJobDetails = () => {
     job_responsibility,
     phone,
   } = jobDetailsData;
+
+  const handleAddToDb = (id) => {
+    addToDb(id);
+  };
 
   return (
     <div className="my-container py-24">
@@ -100,7 +106,12 @@ const FeatureJobDetails = () => {
               <span className="font-medium text-gray-500">{location}</span>
             </div>
           </div>
-          <button className="btn-primary w-full py-3">Apply Now</button>
+          <button
+            onClick={() => handleAddToDb(job_id)}
+            className="btn-primary w-full py-3"
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>
