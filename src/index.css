@@ -23,7 +23,7 @@
 }
 
 .btn-outline {
-  @apply mb-1 mr-1 rounded border  border-violet-300 from-violet-400 to-violet-500 px-6 py-1 text-base font-semibold tracking-wide text-violet-500 outline-none transition-all duration-150 ease-linear hover:bg-gradient-to-r   hover:text-white hover:shadow-lg focus:outline-none active:bg-violet-600;
+  @apply mb-1 mr-1 rounded border  border-violet-300 from-violet-400 to-violet-500 px-4 py-1 text-base font-semibold tracking-wide text-violet-500 outline-none transition-all duration-150 ease-linear hover:bg-gradient-to-r   hover:text-white hover:shadow-lg focus:outline-none active:bg-violet-600;
 }
 @layer utilities {
   .animation-text {
