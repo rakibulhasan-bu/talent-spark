@@ -80,7 +80,7 @@ const AppliedJobs = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-6 px-32 py-16">
+        <div className="flex flex-col gap-6 py-28 md:px-32 md:py-16">
           {allJobData &&
             allJobData.map((appliedSingleJobData) => (
               <AppliedSingleJob

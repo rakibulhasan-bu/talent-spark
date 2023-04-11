@@ -35,9 +35,9 @@ const FeatureJobDetails = () => {
       <h1 className="bg-gray-100 py-16 text-center text-5xl font-semibold text-gray-700 ">
         Job Details
       </h1>
-      <div className="my-container flex justify-between gap-8 pb-20 pt-12 ">
+      <div className="my-container flex flex-col justify-between gap-8 pb-20 pt-12 md:flex-row ">
         {/* job description starts here  */}
-        <div className="w-2/3 space-y-6">
+        <div className="space-y-6 md:w-2/3">
           <div>
             <h2 className="pb-1 text-lg font-semibold  text-gray-700">
               Job Description:
@@ -70,7 +70,7 @@ const FeatureJobDetails = () => {
         </div>
 
         {/* job details info starts here  */}
-        <div className="w-1/3 space-y-4">
+        <div className="space-y-4 md:w-1/3">
           <div className="space-y-3 rounded-lg bg-gray-100 p-6 hover:bg-violet-100">
             <h2 className="border-spacing-2 border-b-2 border-gray-300 pb-3  text-xl font-medium text-gray-800">
               Job Details

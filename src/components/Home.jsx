@@ -30,11 +30,11 @@ const Home = () => {
   return (
     <div className="my-container">
       {/* banner section starts here  */}
-      <div className="flex h-[80vh] flex-col items-center justify-between lg:flex-row">
-        <div className="w-1/2 space-y-6">
-          <div className=" text-6xl font-semibold text-gray-900">
+      <div className="flex flex-col items-center justify-between md:h-[80vh] lg:flex-row">
+        <div className="space-y-4 pt-6 md:w-1/2 md:space-y-6">
+          <div className="text-4xl font-semibold text-gray-900 md:text-6xl">
             <p>One Step</p> <p>Closer To Your</p>
-            <p className="animation-text text-6xl"> Dream Job</p>
+            <p className="animation-text text-5xl md:text-6xl"> Dream Job</p>
           </div>
           <p className="font-medium text-gray-600">
             Explore thousands of job opportunities with all the information you
@@ -47,7 +47,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="h-full w-1/2">
+        <div className="h-full md:w-1/2">
           <img
             className="h-full w-full object-cover"
             src="/public/assets/Images/men-photo.png"

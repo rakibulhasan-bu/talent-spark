@@ -13,8 +13,8 @@ const AppliedSingleJob = ({ appliedSingleJobData }) => {
     salary_range,
   } = appliedSingleJobData;
   return (
-    <div className="flex items-center justify-between space-y-3 rounded-lg border border-gray-400 p-4 hover:bg-gray-50">
-      <div className="flex items-center gap-6">
+    <div className="flex flex-col items-center justify-between space-y-3 rounded-lg border border-gray-400 p-4 hover:bg-gray-50 md:flex-row">
+      <div className="flex flex-col items-center gap-6 md:flex-row">
         <img
           className="aspect-video h-full w-40 object-contain"
           src={company_logo}
@@ -35,7 +35,7 @@ const AppliedSingleJob = ({ appliedSingleJobData }) => {
             <p className="flex space-x-2 font-medium text-gray-600">
               <img src="/public/assets/Icons/Frame.png" alt="" />
               <span>Salary:</span>
-              <span>{salary_range}</span>
+              <p>{salary_range}</p>
             </p>
           </div>
         </div>
