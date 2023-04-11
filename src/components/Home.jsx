@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("/public/jsonData/FeatureJobData.json");
+        const response = await fetch("/public/FeatureJobData.json");
         const jsonData = await response.json();
         setFeatureJob(jsonData);
       } catch (error) {
