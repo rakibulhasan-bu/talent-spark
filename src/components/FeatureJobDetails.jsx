@@ -1,34 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const FeatureJobDetails = () => {
   const id = useParams();
 
-  const [jobData, setJobData] = useState([]);
+  const data = useLoaderData();
 
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("/public/jsonData/FeatureJobData.json");
-      const data = await response.json();
-      setJobData(data);
-    }
-    fetchData();
-  }, []);
-
-  const jobDetailsData = jobData.find((singleJobData) => {
-    return singleJobData.job_id == id.id;
-  });
+  const jobDetailsData =
+    data &&
+    data.find((singleJobData) => {
+      return singleJobData.job_id == id.id;
+    });
 
   const {
-    company_name,
-    company_logo,
-    employee_type,
-    employment_type,
     job_title,
-    job_id,
     location,
     salary_range,
+    email,
+    experience,
+    educational_requirements,
+    job_description,
+    job_responsibility,
+    phone,
   } = jobDetailsData;
+
   return (
     <div className="my-container py-24">
       <h1 className="title text-center">Job Details</h1>
@@ -39,26 +34,14 @@ const FeatureJobDetails = () => {
             <h2 className="pb-1 text-lg font-semibold  text-gray-700">
               Job Description:
             </h2>
-            <p className="indent-16 text-gray-400">
-              A UI/UX (User Interface/User Experience) designer is responsible
-              for designing and creating engaging and effective interfaces for
-              software and web applications. This includes designing the layout,
-              visual design, and interactivity of the user interface.
-            </p>
+            <p className="indent-16 text-gray-400">{job_description}</p>
           </div>
 
           <div>
             <h2 className="pb-1 text-lg font-semibold text-gray-700">
               Job Responsibility:
             </h2>
-            <p className="indent-16 text-gray-400">
-              Collaborating with cross-functional teams: UI/UX designers often
-              work closely with other teams, including product management,
-              engineering, and marketing, to ensure that the user interface is
-              aligned with business and technical requirements. You will need to
-              be able to effectively communicate your design ideas and gather
-              feedback from other team members.
-            </p>
+            <p className="indent-16 text-gray-400">{job_responsibility}</p>
           </div>
 
           <div>
@@ -66,13 +49,15 @@ const FeatureJobDetails = () => {
               Educational Requirements:
             </h2>
             <p className="indent-16 text-gray-400">
-              Bachelor degree to complete any reputational university.
+              {educational_requirements}
             </p>
           </div>
 
           <div>
-            <h2 className="pb12 text-lg font-semibold text-gray-700"></h2>
-            <p className="indent-16 text-gray-400"></p>
+            <h2 className="pb12 text-lg font-semibold text-gray-700">
+              Experiences:
+            </h2>
+            <p className="indent-16 text-gray-400">{experience}</p>
           </div>
         </div>
 
@@ -88,7 +73,11 @@ const FeatureJobDetails = () => {
               <span className="font-medium text-gray-500">{salary_range}</span>
             </div>
             <div className="flex space-x-2">
-              <img src="/public/assets/Icons/Frame-1.png" alt="" />
+              <img
+                className="object-contain"
+                src="/public/assets/Icons/Frame-1.png"
+                alt=""
+              />
               <span className="font-semibold text-gray-700">Job Title :</span>
               <span className="font-medium text-gray-500">{job_title}</span>
             </div>
@@ -98,12 +87,12 @@ const FeatureJobDetails = () => {
             <div className="flex space-x-2">
               <img src="/public/assets/Icons/Frame-2.png" alt="" />
               <span className="font-semibold text-gray-700">Phone :</span>
-              <span className="font-medium text-gray-500">{}</span>
+              <span className="font-medium text-gray-500">{phone}</span>
             </div>
             <div className="flex space-x-2">
               <img src="/public/assets/Icons/Frame-3.png" alt="" />
               <span className="font-semibold text-gray-700">Email :</span>
-              <span className="font-medium text-gray-500"> info@gmail.com</span>
+              <span className="font-medium text-gray-500"> {email}</span>
             </div>
             <div className="flex space-x-2">
               <img src="/public/assets/Icons/Frame-4.png" alt="" />
