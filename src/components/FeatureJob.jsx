@@ -13,7 +13,7 @@ const FeatureJob = ({ singleJob }) => {
     salary_range,
   } = singleJob;
   return (
-    <div className="space-y-3 rounded-lg border border-gray-400 p-8 hover:bg-gray-50">
+    <div className="space-y-3 rounded-lg border border-gray-200 p-8 hover:bg-gray-50 hover:shadow-xl">
       <img
         className="aspect-video h-20 object-contain"
         src={company_logo}

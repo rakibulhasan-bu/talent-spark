@@ -1,45 +1,34 @@
+import { toast } from "react-hot-toast";
+
 // use local storage to manage cart data
 const addToDb = id => {
-    let shoppingCart = getShoppingCart();
+    let appliedJobData = getAppliedJob();
     // add quantity
-    const quantity = shoppingCart[id];
+    const quantity = appliedJobData[id];
     if (!quantity) {
-        shoppingCart[id] = 1;
+        appliedJobData[id] = 1;
+        toast.success('Applied successfully!')
     }
     else {
-        alert('already saved')
-        // const newQuantity = quantity + 1;
-        // shoppingCart[id] = newQuantity;
+        toast.error('You already apply these job!')
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    localStorage.setItem('applied-job', JSON.stringify(appliedJobData));
 }
 
-const removeFromDb = id => {
-    const shoppingCart = getShoppingCart();
-    if (id in shoppingCart) {
-        delete shoppingCart[id];
-        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-    }
-}
 
-const getShoppingCart = () => {
-    let shoppingCart = {};
+const getAppliedJob = () => {
+    let appliedJobData = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
+    const storedCart = localStorage.getItem('applied-job');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        appliedJobData = JSON.parse(storedCart);
     }
-    return shoppingCart;
+    return appliedJobData;
 }
 
-const deleteShoppingCart = () => {
-    localStorage.removeItem('shopping-cart');
-}
 
 export {
     addToDb,
-    removeFromDb,
-    getShoppingCart,
-    deleteShoppingCart
+    getAppliedJob,
 }

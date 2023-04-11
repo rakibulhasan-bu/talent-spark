@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getShoppingCart } from "../../public/utilities/fakedb";
+import { getAppliedJob } from "../../public/utilities/fakedb";
 import { useLoaderData } from "react-router-dom";
 import AppliedSingleJob from "./AppliedSingleJob";
 
@@ -9,7 +9,7 @@ const AppliedJobs = () => {
   const [allJobData, setAllJobData] = useState([]);
 
   const jobData = useLoaderData();
-  const storedData = getShoppingCart();
+  const storedData = getAppliedJob();
 
   useEffect(() => {
     let jobDataArray = [];
@@ -46,8 +46,10 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <div className="title py-16">Applied jobs</div>
-      <div className="my-container py-12">
+      <div className="bg-gray-100 py-16 text-center text-5xl font-semibold text-gray-700 ">
+        Applied jobs
+      </div>
+      <div className="my-container py-8">
         {/* filter section starts here  */}
         <div className="flex justify-end">
           <div className="relative ">

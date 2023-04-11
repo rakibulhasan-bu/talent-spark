@@ -50,7 +50,7 @@ const Home = () => {
         <div className="h-full w-1/2">
           <img
             className="h-full w-full object-cover"
-            src="/public/assets/Images/P3OLGJ1 copy 1.png"
+            src="/public/assets/Images/men-photo.png"
             alt=""
           />
         </div>
@@ -87,7 +87,7 @@ const Home = () => {
         </div>
         <div className="text-center">
           <button onClick={handleSeeAll} className="btn-primary py-3">
-            {seeAll && seeAll ? "See less Job" : "See All Jobs"}
+            {seeAll && seeAll ? "See less Jobs" : "See All Jobs"}
           </button>
         </div>
       </div>
