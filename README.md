@@ -3,7 +3,7 @@
       applications. The website also features an area chart that displays data
       on job applications over time. <br />
 
-<h1>Live Website: https://talent-sparks.netlify.app/</h1>
+<h1>Live Website: </h1>
 
 <h1>Features</h1>
       <ol>
