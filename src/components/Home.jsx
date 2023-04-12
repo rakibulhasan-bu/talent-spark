@@ -16,13 +16,9 @@ const Home = () => {
 
   useEffect(() => {
     async function fetchData() {
-      try {
-        const response = await fetch("/public/FeatureJobData.json");
-        const jsonData = await response.json();
-        setFeatureJob(jsonData);
-      } catch (error) {
-        toast.error(error);
-      }
+      const response = await fetch("/FeatureJobData.json");
+      const jsonData = await response.json();
+      setFeatureJob(jsonData);
     }
     fetchData();
   }, []);
@@ -50,7 +46,7 @@ const Home = () => {
         <div className="h-full md:w-1/2">
           <img
             className="h-full w-full object-cover"
-            src="/public/assets/Images/men-photo.png"
+            src="https://res.cloudinary.com/dwx2jd8b1/image/upload/v1681301024/Rakibul_Hasan/men-photo_zndybj.png"
             alt=""
           />
         </div>
@@ -64,9 +60,13 @@ const Home = () => {
           need. Its your future
         </p>
         <div className="grid gap-8 py-8 md:grid-cols-2 lg:grid-cols-4">
-          {categoryData.map((category) => (
-            <CategoryComponent key={category.category_id} category={category} />
-          ))}
+          {categoryData &&
+            categoryData.map((category) => (
+              <CategoryComponent
+                key={category.category_id}
+                category={category}
+              />
+            ))}
         </div>
       </div>
 
